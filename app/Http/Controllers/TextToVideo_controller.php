@@ -10,6 +10,109 @@ class TextToVideo_controller extends Controller
 {
     public function textToVideo($videoNames)
     {
+        // Periksa apakah kata kunci adalah "selamat malam"
+        if ($videoNames === "selamat malam") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/selamat malam.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "selamat siang") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/selamat siang.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "selamat sore") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/selamat sore.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat sore" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "kepala sekolah") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/kepala sekolah.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "hari ini") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/hari ini.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        }
+
         // Pisahkan kata kunci menjadi array
         $keywords = explode(' ', $videoNames);
 
@@ -60,8 +163,112 @@ class TextToVideo_controller extends Controller
     }
 
 
+
     public function textToVideo2($videoNames)
     {
+        // Periksa apakah kata kunci adalah "selamat malam"
+        if ($videoNames === "selamat malam") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/selamat malam.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "selamat siang") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/selamat siang.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "selamat sore") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/selamat sore.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat sore" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "kepala sekolah") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/kepala sekolah.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        } else if ($videoNames === "hari ini") {
+            // Bangun path ke video
+            $path = public_path('assets/sibi/hari ini.mp4');
+
+            // Periksa apakah video ada
+            if (file_exists($path)) {
+                // Mendapatkan konten video
+                $content = file_get_contents($path);
+
+                // Mendapatkan tipe MIME dari video
+                $mime = mime_content_type($path);
+
+                // Mengirim respons dengan tipe MIME yang tepat
+                return response($content)->header('Content-Type', $mime);
+            } else {
+                // Jika video tidak ditemukan, kirim respons JSON
+                return response()->json([
+                    'message' => 'Maaf, video untuk "selamat malam" tidak ditemukan'
+                ], 404);
+            }
+        }
+
         // Pisahkan kata kunci menjadi array
         $keywords = explode(' ', $videoNames);
 
@@ -71,7 +278,7 @@ class TextToVideo_controller extends Controller
         // Lakukan iterasi melalui setiap kata kunci
         foreach ($keywords as $keyword) {
             // Bangun path ke video
-            $path = public_path('assets/bisindo/' . $keyword . '.mp4');
+            $path = public_path('assets/sibi/' . $keyword . '.mp4');
 
             // Periksa apakah video ada
             if (file_exists($path)) {
@@ -79,6 +286,7 @@ class TextToVideo_controller extends Controller
                 $videoPaths[] = $path;
             }
         }
+
         // Periksa apakah ada video yang sesuai dengan kata kunci
         if (empty($videoPaths)) {
             // Jika tidak ada video yang ditemukan, kirim respons JSON
