@@ -169,7 +169,7 @@ class TextToVideo_controller extends Controller
         // Periksa apakah kata kunci adalah "selamat malam"
         if ($videoNames === "selamat malam") {
             // Bangun path ke video
-            $path = public_path('assets/sibi/selamat malam.mp4');
+            $path = public_path('assets/bisindo/selamat malam.mp4');
 
             // Periksa apakah video ada
             if (file_exists($path)) {
@@ -189,7 +189,7 @@ class TextToVideo_controller extends Controller
             }
         } else if ($videoNames === "selamat siang") {
             // Bangun path ke video
-            $path = public_path('assets/sibi/selamat siang.mp4');
+            $path = public_path('assets/bisindo/selamat siang.mp4');
 
             // Periksa apakah video ada
             if (file_exists($path)) {
@@ -209,7 +209,7 @@ class TextToVideo_controller extends Controller
             }
         } else if ($videoNames === "selamat sore") {
             // Bangun path ke video
-            $path = public_path('assets/sibi/selamat sore.mp4');
+            $path = public_path('assets/bisindo/selamat sore.mp4');
 
             // Periksa apakah video ada
             if (file_exists($path)) {
@@ -229,7 +229,7 @@ class TextToVideo_controller extends Controller
             }
         } else if ($videoNames === "kepala sekolah") {
             // Bangun path ke video
-            $path = public_path('assets/sibi/kepala sekolah.mp4');
+            $path = public_path('assets/bisindo/kepala sekolah.mp4');
 
             // Periksa apakah video ada
             if (file_exists($path)) {
@@ -249,7 +249,7 @@ class TextToVideo_controller extends Controller
             }
         } else if ($videoNames === "hari ini") {
             // Bangun path ke video
-            $path = public_path('assets/sibi/hari ini.mp4');
+            $path = public_path('assets/bisindo/hari ini.mp4');
 
             // Periksa apakah video ada
             if (file_exists($path)) {
@@ -278,7 +278,7 @@ class TextToVideo_controller extends Controller
         // Lakukan iterasi melalui setiap kata kunci
         foreach ($keywords as $keyword) {
             // Bangun path ke video
-            $path = public_path('assets/sibi/' . $keyword . '.mp4');
+            $path = public_path('assets/bisindo/' . $keyword . '.mp4');
 
             // Periksa apakah video ada
             if (file_exists($path)) {
